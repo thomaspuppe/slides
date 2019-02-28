@@ -23,6 +23,10 @@ header, section {
 	padding: 1vh 2vw;
 	position: absolute;
 	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 header { z-index: 1; }
@@ -31,6 +35,7 @@ section:target { z-index: 2; }
 
 h1, h2 {
 	font-family: serif;
+	font-size: 2em;
 }
 
 a {
@@ -38,12 +43,14 @@ a {
 }
 a.button {
 	background-color: #F92672;
+	border-radius: 2vw;
 	font-size: 1.2em;
 	font-weight: 600;
 	color: #FFF;
-	padding: 0.7em 1.2em;
+	padding: 0.5em 0.7em 0.3em;
 	text-decoration: none;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 span.highlight {
