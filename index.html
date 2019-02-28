@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="language" content="en">
+    <title>How slides should work</title>
+    <meta name="description" content="TODO">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body class="mode--scroll_DISABLED">
+    <header>
+        <h1>How slides should work</h1>
+        <p>A HTML presentational slide set from Thomas Puppe.</p>
+        <center><a class="button" href="#basics">let's start 🚀</a></center>
+    </header>
+    <section id="basics">
+        <h2>Basics</h2>
+        <ul>
+            <li>valid HTML document</li>
+            <li>responsive</li>
+            <li>fallback mode for reading without fancy styling, and for printing</li>
+            <li><a href="#code">Code</a> with <span class="highlight">syntax-highlighting</span></li>
+            <li>swiping or clicking for next/prev slide</li>
+            <li>&hellip;</li>
+        </ul>
+    </section>
+    <section id="extras">
+        <h2>Extras</h2>
+        <ul>
+            <li><span class="highlight">Theming</span>. I want to be able to</li>
+            <li>document outline / content</li>
+        </ul>
+    </section>
+    <section id="chapter-examples">
+        <h2>Chapter 2: Examples</h2>
+        <p>... where you will see examples of every content type I have styled.</p>
+    </section>
+    <section id="text">
+        <h2>Text</h2>
+        <p></p>
+        <p></p>
+    </section>
+    <section id="list">
+        <h2>List</h2>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <section id="image">
+        <h2>Image</h2>
+        <figure>
+            <figcaption></figcaption>
+        </figure>
+    </section>
+    <section id="code">
+        <h2>Code</h2>
+        <p>The whole ✨magic✨ of this slide set is the CSS <code>:target</code> selector.</p>
+        <pre><code>header { z-index: 1; }
+section { z-index: 0; }
+section:target { z-index: 2; }</code></pre>
+    </section>
+    <section id="credits">
+        <h2>Credits</h2>
+        <p>This slide set can be fount on GitHub: <a href="https://github.com/thomaspuppe/slides">thomaspuppe/slides</a></p>
+    </section>
+    <section id="todo">
+        <h2>TODO</h2>
+        <ul>
+            <li>scroll-mode (mit vertical CSS snapping) to simply see all slides</li>
+        </ul>
+    </section>
+</body>
+</html>

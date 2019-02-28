@@ -1,0 +1,61 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #383830;
+	color: #FFF;
+	font-size: 32px; 
+	font-family: sans-serif;
+	line-height: 1.4;
+	text-rendering: optimizeLegibility;
+}
+
+header, section {
+	background-color: inherit;
+	height: 100vh;
+	margin: 0;
+	padding: 1vh 2vw;
+	position: absolute;
+	width: 100%;
+}
+
+header { z-index: 1; }
+section { z-index: 0; }
+section:target { z-index: 2; }
+
+h1, h2 {
+	font-family: serif;
+}
+
+a {
+	color: #F92672;
+}
+a.button {
+	background-color: #F92672;
+	font-size: 1.2em;
+	font-weight: 600;
+	color: #FFF;
+	padding: 0.7em 1.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+span.highlight {
+	background-color: #E6DB74;
+	color: #383830;
+	font-weight: 400;
+	padding: 0.1em 0.3em;
+}
+
+
+body.mode--scroll header, 
+body.mode--scroll section{
+	position: relative;
+	z-index: unset;
+}
