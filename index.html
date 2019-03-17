@@ -72,5 +72,36 @@ section:target { z-index: 2; }</code></pre>
             <li>scroll-mode (mit vertical CSS snapping) to simply see all slides</li>
         </ul>
     </section>
+    <script>
+        var slides = []
+        var $slides = document.querySelectorAll('section[id]')
+        $slides.forEach(function(slide){
+            slides.push(slide.id)
+        })
+        document.onkeydown = function (e) {
+            e = e || window.event;
+
+            if (e.keyCode == '39' || e.keyCode == '37') {
+                var currentSlide = window.location.hash.replace('#','')
+                var currentIndex = slides.indexOf(currentSlide) || 0
+                var gotoIndex = -1
+
+                if (e.keyCode == '39') {
+                // right arrow
+                    gotoIndex = currentIndex + 1
+                }
+                else if (e.keyCode == '37') {
+                // left arrow
+                    gotoIndex = currentIndex - 1
+                }
+
+                if (gotoIndex < 0) {
+                    window.location.hash = ''
+                } else if (gotoIndex < slides.length) {
+                    window.location.hash = slides[gotoIndex]
+                }
+            }
+        }
+    </script>
 </body>
 </html>
